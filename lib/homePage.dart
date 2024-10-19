@@ -1,3 +1,4 @@
+import 'package:emssender/carPlay.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
@@ -13,7 +14,9 @@ class HomePage extends StatelessWidget {
         children: [
           Material(
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => CarPlay()));
+              },
               child: Container(
                 alignment: Alignment.center,
                 height: 15.h,
