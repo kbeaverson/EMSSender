@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-class EmergencyMessage extends StatelessWidget {
-  const EmergencyMessage({super.key});
+class DistanceMessage extends StatefulWidget {
+  const DistanceMessage({super.key});
 
+  @override
+  State<DistanceMessage> createState() => _DistanceMessageState();
+}
+
+class _DistanceMessageState extends State<DistanceMessage> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +20,7 @@ class EmergencyMessage extends StatelessWidget {
       width: 60.w,
       alignment: Alignment.center,
       child: Text(
-        "EMERGENCY VEHICLE INBOUND",
+        "0.62 mi AWAY",
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 20.0.sp

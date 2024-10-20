@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-class EmergencyMessage extends StatelessWidget {
-  const EmergencyMessage({super.key});
+class ClearRoadwayMessage extends StatelessWidget {
+  const ClearRoadwayMessage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class EmergencyMessage extends StatelessWidget {
       width: 60.w,
       alignment: Alignment.center,
       child: Text(
-        "EMERGENCY VEHICLE INBOUND",
+        "CLEAR THE ROADWAY",
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 20.0.sp
